@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="蒋科的个人简历：数据工程、AI 工程化与项目实践。">
+  <title>蒋科 · Data &amp; AI Engineer</title>
+  <!-- Public resume; contacts and private source documents are excluded. -->
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --secondary: #626269;
+      --blue: #0066cc;
+      --paper: #f5f5f7;
+      --line: #dfdfe4;
+      --max: 1080px;
+      --radius: 28px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; color: var(--ink); background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: #dbe9ff; color: #17294d; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button, summary, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    :focus-visible { outline: 3px solid #0066cc; outline-offset: 5px; border-radius: 5px; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { line-height: 1.18; font-weight: 600; letter-spacing: -.04em; }
+    .wrap { width: min(var(--max), calc(100% - 64px)); margin-inline: auto; }
+    .skip { position: fixed; top: -100px; left: 16px; z-index: 100; background: white; padding: 10px 20px; border-radius: 12px; }
+    .skip:focus { top: 12px; }
+    .site-header {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(255,255,255,.86); border-bottom: 1px solid rgba(0,0,0,.08);
+      -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    }
+    .nav { min-height: 66px; display: flex; align-items: center; gap: 32px; }
+    .brand { color: var(--ink); font-size: 20px; font-weight: 650; letter-spacing: -.04em; white-space: nowrap; }
+    .brand small { color: var(--secondary); font-size: 11px; letter-spacing: .12em; margin-left: 13px; font-weight: 500; }
+    .nav-links { margin-left: auto; display: flex; align-items: center; gap: 27px; }
+    .nav-links a { font-size: 12px; color: #4c4c52; }
+    .nav-links a:hover { color: var(--blue); }
+    .print-button {
+      border: 0; border-radius: 30px; background: var(--ink); color: white;
+      padding: 7px 17px; cursor: pointer; font-size: 12px; white-space: nowrap;
+      transition: background .2s;
+    }
+    .print-button:hover { background: #45454a; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 600; color: var(--secondary); }
+    .hero { position: relative; padding: 94px 0 72px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.13fr 1fr; align-items: center; gap: 44px; }
+    .hero .eyebrow { margin-bottom: 22px; }
+    h1 { font-size: clamp(52px, 6.5vw, 80px); letter-spacing: -.05em; margin-bottom: 14px; }
+    .headline { font-size: clamp(24px, 3vw, 36px); line-height: 1.2; font-weight: 550; letter-spacing: -.05em; }
+    .gradient-text { color: #415bd8; background: linear-gradient(100deg, #0766c6, #6455d3 70%, #9472c8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-intro { margin-top: 25px; color: var(--secondary); font-size: 17px; line-height: 1.85; max-width: 520px; }
+    .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 30px; }
+    .primary-link { display: inline-flex; align-items: center; gap: 15px; color: #fff; background: var(--blue); padding: 11px 24px; border-radius: 30px; font-size: 14px; }
+    .primary-link:hover { text-decoration: none; background: #0071e3; }
+    .text-link { font-size: 14px; }
+    .arrow { font-family: -apple-system, sans-serif; }
+    .hero-note { margin-top: 25px; font-size: 11px; color: var(--secondary); display: flex; align-items: center; gap: 8px; }
+    .note-dot { width: 5px; height: 5px; border-radius: 50%; background: #86868b; }
+    .visual { position: relative; min-height: 348px; display: grid; place-items: center; }
+    .visual::before { content: ""; position: absolute; inset: 3% -8%; background: radial-gradient(ellipse, #e2eaff 0%, #f1eefe 35%, transparent 68%); filter: blur(12px); }
+    .system-window {
+      width: 100%; position: relative; background: rgba(255,255,255,.82); border: 1px solid #fff;
+      border-radius: 22px; box-shadow: 0 30px 70px -35px #464d8850, 0 2px 8px #35396908;
+      transform: perspective(1200px) rotateY(-6deg) rotateX(3deg); overflow: hidden;
+    }
+    .window-bar { display: flex; align-items: center; justify-content: space-between; padding: 17px 21px; border-bottom: 1px solid #eeeeF5; }
+    .window-dots { display: flex; gap: 6px; }
+    .window-dots i { width: 7px; height: 7px; border-radius: 50%; background: #d5d7e2; }
+    .window-title { font-size: 9px; font-weight: 600; color: #747888; letter-spacing: .13em; }
+    .window-content { padding: 32px 30px 27px; }
+    .system-caption { color: #585e79; font-size: 11px; letter-spacing: .05em; margin-bottom: 25px; }
+    .system-pair { display: grid; grid-template-columns: 1fr 26px 1fr; align-items: center; }
+    .module { padding: 20px 8px; text-align: center; border-radius: 16px; background: #f3f5fc; border: 1px solid #e9edf8; }
+    .module-icon { height: 44px; margin-bottom: 12px; color: #5971ce; }
+    .module strong { display: block; font-size: 15px; font-weight: 600; letter-spacing: -.03em; }
+    .module span { display: block; font-size: 10px; color: #767d92; margin-top: 4px; }
+    .connector { height: 1px; background: #bbc6e5; }
+    .system-bottom { display: flex; align-items: center; gap: 9px; margin-top: 22px; font-size: 10px; color: #68718b; }
+    .system-bottom::before { content: ""; width: 5px; height: 5px; background: #7385bf; border-radius: 50%; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 72px; padding-top: 32px; border-top: 1px solid var(--line); }
+    .stat { padding-inline: 30px; border-left: 1px solid var(--line); }
+    .stat:first-child { padding-left: 0; border-left: 0; }
+    .stat-number { font-size: 43px; line-height: 1.2; font-weight: 600; letter-spacing: -.06em; font-variant-numeric: tabular-nums; }
+    .stat-number span { font-size: 20px; font-weight: 500; margin-left: 4px; letter-spacing: -.02em; }
+    .stat-label { display: block; font-size: 12px; color: var(--secondary); margin-top: 10px; }
+    .section { padding: 86px 0; }
+    .projects-section, .skills-section { background: var(--paper); }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 35px; }
+    .section-heading .eyebrow { margin-bottom: 12px; }
+    h2 { font-size: clamp(30px, 4vw, 43px); }
+    .section-caption { color: var(--secondary); font-size: 13px; max-width: 310px; }
+    .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+    .project-card { background: #fff; padding: 32px; border-radius: var(--radius); border: 1px solid #eeeeF1; }
+    .project-card.featured { padding: 36px; }
+    .project-card:first-child { background: linear-gradient(140deg, #fff, #f8f9ff); border-color: #dfe5f6; }
+    .project-top { display: flex; align-items: center; gap: 15px; margin-bottom: 27px; }
+    .project-icon { display: grid; place-items: center; background: #f0f2f7; color: #58617a; border-radius: 12px; width: 40px; height: 40px; font-size: 12px; letter-spacing: -.03em; flex-shrink: 0; }
+    .featured:first-child .project-icon { background: linear-gradient(135deg,#2d6acb,#8473d5); color: white; }
+    .role { font-size: 11px; color: var(--secondary); }
+    .project-card h3 { font-size: 24px; letter-spacing: -.035em; }
+    .project-card.featured h3 { font-size: 28px; }
+    .project-meta { margin-top: 12px; font-size: 11px; color: var(--secondary); line-height: 1.8; }
+    .points { margin: 22px 0 0; padding-left: 1.15em; color: var(--secondary); font-size: 14px; line-height: 1.85; }
+    .points li + li { margin-top: 11px; }
+    .points li::marker { color: #a2a5b0; font-size: .75em; }
+    .points strong { color: var(--ink); font-weight: 600; }
+    details { margin-top: 23px; }
+    summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; font-size: 12px; color: var(--blue); min-height: 38px; padding-block: 5px; }
+    summary::-webkit-details-marker { display: none; }
+    .toggle-icon { width: 26px; height: 26px; border-radius: 50%; background: #f0f0f4; position: relative; flex-shrink: 0; }
+    .toggle-icon::before, .toggle-icon::after { content: ""; position: absolute; background: #64646c; width: 10px; height: 1px; left: 8px; top: 12px; }
+    .toggle-icon::after { transform: rotate(90deg); transition: transform .2s; }
+    details[open] .toggle-icon::after { transform: rotate(0); }
+    .open-label, details[open] .closed-label { display: none; }
+    details[open] .open-label { display: inline; }
+    .detail-body { border-top: 1px solid var(--line); margin-top: 12px; }
+    .detail-body .points { margin-top: 18px; }
+    .projects-footer { margin-top: 26px; font-size: 11px; color: var(--secondary); }
+    .experience-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 65px; margin-top: 42px; }
+    .career-label { margin-top: 9px; font-size: 12px; color: var(--secondary); }
+    .company { font-size: 25px; font-weight: 600; letter-spacing: -.04em; }
+    .career-meta { margin-top: 22px; font-size: 13px; color: var(--secondary); }
+    .career-meta p + p { margin-top: 8px; }
+    .career-meta strong { color: var(--ink); font-weight: 500; }
+    .career-body { border-left: 2px solid #e7e7ed; padding-left: 32px; }
+    .career-body .points { margin-top: 0; font-size: 15px; }
+    .about { margin-top: 45px; border-top: 1px solid var(--line); padding-top: 28px; }
+    .about p { color: var(--secondary); font-size: 14px; }
+    .about p + p { margin-top: 13px; }
+    .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 40px; row-gap: 32px; }
+    .skill { padding-top: 20px; border-top: 1px solid #d9d9e0; }
+    .skill h3 { font-size: 17px; font-weight: 600; letter-spacing: -.02em; margin-bottom: 13px; }
+    .skill h3 strong { font-weight: inherit; }
+    .skill p { color: var(--secondary); font-size: 13px; line-height: 1.9; }
+    .background-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .background-block { padding-top: 28px; border-top: 1px solid var(--line); }
+    .background-block .eyebrow { margin-bottom: 20px; }
+    .background-block h3 { font-size: 23px; }
+    .background-block .points { margin-top: 20px; padding-left: 0; list-style: none; }
+    .background-block .points li + li { margin-top: 18px; }
+    .archive { border-top: 1px solid var(--line); padding-top: 10px; }
+    .archive .points { font-size: 12px; }
+    .contact-section { padding: 75px 0; background: var(--paper); text-align: center; }
+    .contact-section h2 { margin-top: 13px; }
+    .email-link { display: inline-flex; gap: 12px; align-items: center; font-size: clamp(20px, 3vw, 30px); letter-spacing: -.025em; margin-top: 24px; overflow-wrap: anywhere; }
+    .contact-caption { margin-top: 16px; color: var(--secondary); font-size: 12px; }
+    .footer { padding: 23px 0; font-size: 10px; color: var(--secondary); }
+    .footer .wrap { display: flex; justify-content: space-between; gap: 20px; }
+    .footer a { color: var(--secondary); }
+    @media (max-width: 800px) {
+      .hero { padding-top: 68px; }
+      .hero-grid { gap: 28px; grid-template-columns: 1.15fr 1fr; }
+      .hero-intro { font-size: 15px; }
+      .window-content { padding: 25px 18px; }
+      .module strong { font-size: 12px; }
+      .system-bottom { font-size: 9px; }
+      .project-card, .project-card.featured { padding: 27px; }
+      .project-card.featured h3 { font-size: 25px; }
+      .skill-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { gap: 18px; }
+      .brand small { display: none; }
+    }
+    @media (max-width: 600px) {
+      html { scroll-padding-top: 100px; }
+      .wrap { width: calc(100% - 40px); }
+      .nav { gap: 14px; flex-wrap: wrap; min-height: 62px; padding-block: 12px; }
+      .brand { font-size: 19px; }
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 11px; }
+      .print-button { padding: 6px 12px; font-size: 11px; }
+      .hero { padding: 52px 0 45px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+      .hero .eyebrow { margin-bottom: 16px; font-size: 10px; }
+      h1 { font-size: 58px; }
+      .headline { font-size: 29px; }
+      .hero-intro { font-size: 15px; max-width: none; margin-top: 20px; }
+      .visual { min-height: 0; max-width: 370px; width: 100%; margin: 0 auto; }
+      .system-window { transform: none; }
+      .window-content { padding: 22px 24px; }
+      .system-caption { margin-bottom: 15px; }
+      .module { padding: 14px 8px; }
+      .module-icon { height: 32px; margin-bottom: 8px; }
+      .module strong { font-size: 14px; }
+      .system-bottom { margin-top: 16px; font-size: 10px; }
+      .stats { margin-top: 42px; padding-top: 24px; }
+      .stat { padding-inline: 12px; }
+      .stat-number { font-size: 30px; }
+      .stat-number span { font-size: 13px; margin-left: 2px; }
+      .stat-label { font-size: 10px; line-height: 1.8; margin-top: 8px; }
+      .section { padding: 56px 0; }
+      .section-heading { align-items: start; flex-direction: column; gap: 14px; margin-bottom: 27px; }
+      .section-caption { font-size: 12px; }
+      .project-grid { grid-template-columns: 1fr; gap: 16px; }
+      .project-card, .project-card.featured { padding: 26px; border-radius: 23px; }
+      .project-card h3, .project-card.featured h3 { font-size: 25px; }
+      .project-top { margin-bottom: 21px; }
+      .experience-layout { grid-template-columns: 1fr; gap: 27px; margin-top: 30px; }
+      .career-body { padding-left: 21px; }
+      .career-body .points { font-size: 14px; }
+      .skill-grid { gap: 25px; }
+      .skill h3 { font-size: 16px; }
+      .skill p { font-size: 12px; }
+      .background-grid { grid-template-columns: 1fr; gap: 34px; }
+      .contact-section { padding: 55px 0; }
+      .contact-section h2 { font-size: 32px; }
+      .footer .wrap { flex-direction: column; gap: 5px; }
+    }
+    @media (max-width: 370px) {
+      .nav-links { gap: 12px; }
+      .print-button { width: 100%; }
+      .nav { justify-content: space-between; }
+      .skill-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+    @page { size: A4; margin: 15mm 15mm 17mm; }
+    @media print {
+      html { scroll-behavior: auto; }
+      body { color: #111; background: #fff; font-size: 9pt; line-height: 1.5; }
+      .wrap { width: 100%; max-width: none; }
+      .site-header, .skip, .visual, .hero-actions, .hero-note, summary, .footer, .projects-footer, .contact-caption { display: none !important; }
+      .hero { padding: 0 0 15px; overflow: visible; }
+      .hero-grid { display: block; }
+      .hero .eyebrow { margin-bottom: 8px; }
+      h1 { font-size: 30pt; margin-bottom: 6px; }
+      .headline { font-size: 16pt; }
+      .gradient-text { background: none; color: #111; -webkit-text-fill-color: #111; }
+      .hero-intro { max-width: none; font-size: 9pt; margin-top: 10px; line-height: 1.6; }
+      .stats { margin-top: 18px; padding-top: 12px; }
+      .stat-number { font-size: 22pt; }
+      .stat-number span { font-size: 10pt; }
+      .stat-label { font-size: 8pt; margin-top: 4px; }
+      .section { padding: 17px 0; background: #fff; }
+      .section-heading { margin-bottom: 16px; display: block; break-after: avoid; }
+      .section-heading .eyebrow { display: none; }
+      h2 { font-size: 17pt; }
+      h3 { break-after: avoid; }
+      .section-caption { font-size: 8pt; margin-top: 6px; max-width: none; }
+      .projects-section .section-caption { display: none; }
+      .project-grid, .background-grid { display: block; }
+      .project-card, .project-card.featured, .project-card:first-child {
+        background: none; border: 0; border-top: 1px solid #ddd; border-radius: 0;
+        padding: 15px 0; break-inside: avoid; box-shadow: none;
+      }
+      .project-top { margin-bottom: 5px; }
+      .project-icon { display: none; }
+      .role { color: #555; font-size: 8pt; }
+      .project-card h3, .project-card.featured h3 { font-size: 13pt; }
+      .project-meta { font-size: 8pt; margin-top: 5px; }
+      .points, .career-body .points { font-size: 9pt; line-height: 1.6; margin-top: 9px; color: #333; }
+      .points li + li { margin-top: 5px; }
+      details { margin-top: 0; }
+      details::details-content { display: block; content-visibility: visible; }
+      .detail-body { display: block !important; border: 0; margin-top: 0; }
+      .detail-body .points { margin-top: 5px; }
+      .experience-layout { grid-template-columns: 1fr 2fr; gap: 25px; margin-top: 10px; }
+      .company { font-size: 13pt; }
+      .career-label, .career-meta { font-size: 8pt; }
+      .career-meta { margin-top: 8px; }
+      .career-body { padding-left: 20px; }
+      .about { margin-top: 15px; padding-top: 12px; }
+      .about p { font-size: 9pt; }
+      .skill-grid { grid-template-columns: repeat(2, 1fr); gap: 16px 30px; }
+      .skill { break-inside: avoid; padding-top: 10px; }
+      .skill h3 { font-size: 10pt; margin-bottom: 5px; }
+      .skill p { font-size: 9pt; line-height: 1.6; }
+      .background-block { padding-top: 12px; margin-bottom: 20px; }
+      .background-block .eyebrow { font-size: 8pt; margin-bottom: 7px; }
+      .background-block h3 { font-size: 13pt; }
+      .background-block .points { margin-top: 9px; }
+      .background-block .points li + li { margin-top: 6px; }
+      .archive .points { font-size: 8pt; columns: 2; column-gap: 24px; }
+      .archive .points li { break-inside: avoid; }
+      .contact-section { background: none; text-align: left; padding: 15px 0 0; border-top: 1px solid #ddd; break-inside: avoid; }
+      .contact-section .eyebrow { display: none; }
+      .contact-section h2 { font-size: 12pt; margin-top: 0; }
+      .email-link { font-size: 10pt; margin-top: 8px; color: #111; }
+      .email-link .arrow { display: none; }
+      a { color: #111; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到简历正文</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="简历导航">
+      <a href="#top" class="brand">蒋科<small>DATA &amp; AI</small></a>
+      <div class="nav-links">
+        <a href="#projects">项目</a>
+        <a href="#experience">经历</a>
+        <a href="#skills">能力</a>
+        <a href="#background">背景</a>
+      </div>
+      <button class="print-button" type="button" id="print-resume" hidden>打印 / PDF</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="name">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">个人简历 / 腾讯｜企业微信</p>
+            <h1 id="name">蒋科</h1>
+            <p class="headline gradient-text">Data &amp; AI Engineer</p>
+            <p class="hero-intro">10 年以上研发经验，长期从事企业级数据工程，具备内部运营系统、数据仓库、大规模离线计算、数据治理、性能与稳定性建设经验。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#projects">探索项目经历 <span class="arrow" aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#experience">职业经历 <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+            <p class="hero-note"><span class="note-dot" aria-hidden="true"></span>从数据基础建设，到 AI 工程化实践</p>
+          </div>
+          <div class="visual" aria-hidden="true">
+            <div class="system-window">
+              <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">KNOWLEDGE × EXECUTION</span></div>
+              <div class="window-content">
+                <p class="system-caption">AI-native 数据工程知识库</p>
+                <div class="system-pair">
+                  <div class="module">
+                    <svg class="module-icon" viewBox="0 0 48 48" fill="none"><path d="M9 9h11c4 0 5 3 5 3s1-3 5-3h9v29h-9c-4 0-5 3-5 3s-1-3-5-3H9V9Z" stroke="currentColor" stroke-width="1.5"/><path d="M25 13v25M14 17h6M14 23h6M30 17h4M30 23h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <strong>LLM Wiki</strong><span>可维护的知识上下文</span>
+                  </div>
+                  <div class="connector"></div>
+                  <div class="module">
+                    <svg class="module-icon" viewBox="0 0 48 48" fill="none"><rect x="7" y="9" width="34" height="30" rx="7" stroke="currentColor" stroke-width="1.5"/><path d="m15 19 6 5-6 5M26 29h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <strong>Agent Skills</strong><span>有边界的任务执行</span>
+                  </div>
+                </div>
+                <div class="system-bottom">45 份文档 · 14+ Skills · 2–5 人内部试点</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats" aria-label="代表经历与成果">
+          <div class="stat"><p class="stat-number">10<span>年+</span></p><span class="stat-label">研发经验 · 长期从事数据工程</span></div>
+          <div class="stat"><p class="stat-number">40<span>亿条</span></p><span class="stat-label">日志 IP 匹配 · 10 分钟内完成</span></div>
+          <div class="stat"><p class="stat-number">≈315<span>万元/年</span></p><span class="stat-label">治理项目团队收益 · 平台成本口径</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">从数据，到智能。</h2></div><p class="section-caption">以工程实践连接知识与执行。<br>展开项目，查看具体职责、方案与成果。</p></div>
+        <div class="project-grid"><article class="project-card featured"><div class="project-top"><span class="project-icon" aria-hidden="true">01</span><span class="role">发起人、独立设计与实现</span></div><h3>AI-native 数据工程知识库</h3><p class="project-meta">2025–至今｜Python、LLM Wiki、Agent Skills</p><ul class="points"><li>针对 AI Agent 缺少数据项目上下文、难以可靠理解和操作内部数据系统的问题，主动发起并独立落地内部工程探索，负责设计、开发、文档、试点支持和持续修复。</li><li>采用“知识与执行一体化”架构：LLM Wiki 提供可维护的项目上下文，Agent Skills 将隐性流程固化为可靠执行工具；基于复杂关系需要显式组织的判断，未采用向量 RAG。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>接入在线文档、PySpark / SQL 代码、任务与调度元数据，由 Agent 发现来源变化并局部更新受影响 Wiki 页面，再经人工审核；维护文档引用、代码到数据表、任务到代码、任务依赖及业务主题到资产等关系。</li><li>将动态任务状态、表结构和运行结果留给 Agent 实时查询，Wiki 仅沉淀稳定知识和查询入口；保留来源引用，并对照生产代码、任务与数据事实执行一致性检查。</li><li>独立设计 Agent Skills 与多 Agent 兼容方案，维护统一技能源；代表能力覆盖调度任务运维、统计信息查询和半自动部署流水线。</li><li>通过执行前鉴权、环境、权限和输入检查控制前置条件；Agent 完成任务查询、分析、变更准备和校验，实际变更前由人工确认，可恢复错误自动处理，高风险操作受限。</li><li>部署流水线覆盖生产脚本、任务配置、发布操作、结果验证和文档记录；已递归整理 45 份去重文档、识别 53 条引用关系、维护 14+ 配套 Skills。</li><li>项目已供个人稳定使用并进入 2–5 人内部试点，主要帮助数据工程师更快定位文档、代码和任务上下文；下一阶段将完善历史问题评测集、评分和回归验证闭环。</li></ul></div></details></article>
+<article class="project-card featured"><div class="project-top"><span class="project-icon" aria-hidden="true">02</span><span class="role">项目主导者</span></div><h3>企业微信数据资产治理</h3><p class="project-meta">2024-01–2024-12，治理机制持续维护至今</p><ul class="points"><li>面对数据使用门槛高、资源成本与稳定性压力、历史包袱及维护成本等问题，定义治理范围、整体框架、指标和收益模型，协调数据平台、业务开发及运维 / SRE，并承担核心实现。</li><li>主导计算任务治理、存储治理、应用与报表治理；以任务或下游产出是否被访问定义价值，基于血缘图遍历建设低价值任务识别工具链。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>建立候选生成、负责人 Review、冻结观察、告警与反馈监控、安全下线和快速恢复流程；通过补齐非规范出库、跨平台依赖、血缘漏采/多采及人工反馈闭环，将识别准确率从 20% 提升至 90%。</li><li>主导低价值表清理、分区生命周期调整和软删除流程；推进统计任务、数据库出库和 HTTP 出库治理，并以数据证据、分批灰度和负责人确认降低跨团队治理风险。</li><li>建立定期扫描候选的长效机制，专项结束后持续负责治理能力演进。</li><li><strong>项目团队成果</strong>：下线 966 个任务，释放 459 小时/天任务运行时间，调优 4,363 个任务；库表数量精简 73%，冻结 400+ 无效统计任务（涉及 57 万统计项），清理 400+ 数据库表，报表总量下降 45%，新告警上线半年掉零投诉为 0。</li><li><strong>项目团队资源收益</strong>：按统一平台成本口径计算，约 315 万元/年。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">03</span><span class="role">数据开发负责人</span></div><h3>企业微信商业化订单数据体系</h3><p class="project-meta">2023–至今｜PySpark、Spark、Hive / HiveSQL、分层数仓</p><ul class="points"><li>负责订单数据模型与业务口径、稳定性和长期维护，建设 ODS → DWD 分层数据链路，统一充值、订单、发货和结算等多源数据。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>建立刊例价、订单流水、用户支付和实收预估等金额口径，处理新购、续期、扩容、升级、缩容等复杂订单类型。</li><li>设计主订单与附属订单关系，处理服务周期重叠、续费关系、测试订单和脏数据，支撑商业分析、续费率和客户运营场景。</li><li>持续处理新业务类型、历史数据修正、数据对账和异常恢复，保证长期演进中的口径一致性与链路稳定性。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">04</span><span class="role">项目主导者</span></div><h3>大规模数据计算与性能优化</h3><p class="project-meta">2024–2026｜PySpark、Spark、Hive / HiveSQL</p><ul class="points"><li>优化网络质量日志计算，在 10 分钟内完成约 40 亿条日志的 IP 匹配及多维聚合。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>重构通用离线特征异常检测流程，采用抽样验证，在保持既有异常覆盖能力的前提下，将检测耗时缩减约 49–102 倍。</li><li>修复升级导致的任务性能回退，将一项小时级任务恢复至约 5 分钟；另将代表性离线统计从约 90 分钟分别优化至约 10 分钟和 6 分钟。</li><li>结合分区、并行度、数据倾斜、内存、磁盘溢写和 GC 等运行指标持续调优，兼顾性能、资源成本和稳定性。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">05</span><span class="role">核心开发者</span></div><h3>企业级对外数据服务平台</h3><ul class="points"><li>负责企业认证、企业画像、推荐和内容特征等场景的离线特征计算、数据出库和容量评估。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>参与建设“离线批量计算 → 在线键值存储 → 查询接口”的数据服务链路，为多类业务提供稳定的在线数据能力。</li><li>负责数据质量、对账、监控告警和故障处理，保障离线数据按计划进入在线服务。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">06</span><span class="role">数据侧负责人</span></div><h3>竞品预警数据链路</h3><p class="project-meta">2025–2026</p><ul class="points"><li>负责小时级预警数据链路、日志处理、过滤规则和灰度验证，支撑约 330 万日数据量。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>按模块分批灰度，持续处理数据源和接口稳定性问题，保证预警数据及时、准确交付。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">07</span><span class="role">核心开发者</span></div><h3>用户与企业基础数据仓库</h3><p class="project-meta">2016–2022｜PySpark、Spark、Hive / HiveSQL、Hadoop / YARN、Python</p><ul class="points"><li>围绕用户与企业基础信息建设公共数据模型；早期从零建设，后期持续演进为治理和平台化能力。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>负责分层模型设计、核心任务开发、指标与口径治理、调度质量和稳定性。</li><li>支撑核心经营报表、业务分析与取数，通过公共数据层和统一口径减少重复建设、提升数据交付效率。</li><li>在产品快速演进过程中兼容历史逻辑与新业务需求，保持核心数据口径稳定。</li></ul></div></details></article>
+<article class="project-card "><div class="project-top"><span class="project-icon" aria-hidden="true">08</span><span class="role">独立交付</span></div><h3>企业微信综合运营平台</h3><p class="project-meta">2015｜Python、JavaScript、MySQL</p><ul class="points"><li>面向企业微信运营场景建设综合运营平台，包含内部运营后台和数据分析能力。</li></ul><details class="project-details"><summary><span class="closed-label">展开项目详情</span><span class="open-label">收起项目详情</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>独立承担需求分析、前端页面、Python 后端服务和上线交付，为后续向数据工程转型建立软件工程基础。</li></ul></div></details></article></div>
+        <p class="projects-footer">个人职责与团队成果分别标注；内部试点不等同于规模化生产系统。</p>
+      </div>
+    </section>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">Experience</p><h2 id="experience-title">持续构建。持续演进。</h2></div><p class="section-caption">从运营开发，到数据工程，<br>再到知识与工具协同的 AI 工作流。</p></div>
+        <div class="experience-layout">
+          <div><p class="company">腾讯｜企业微信</p><p class="career-label">技术负责人兼个人贡献者</p><div class="career-meta"><p><strong>数据工程师</strong>｜2016–至今</p><p><strong>运营开发工程师</strong>｜2015-07–2016</p></div></div>
+          <div class="career-body"><ul class="points"><li>从统计报表逐步深入数据采集、数仓、任务调度和稳定性建设，长期负责企业级数据系统及公共数据能力。</li><li>围绕用户与企业基础数据建设分层数仓和公共模型，负责核心任务、指标口径、调度质量与稳定性，支撑核心经营报表和业务分析取数。</li><li>作为技术负责人兼个人贡献者，承担复杂项目的范围定义、技术方案、核心实现、上线保障和跨团队推进。</li><li>2022 年担任运营成本优化项目数据侧负责人，负责计算资源成本数据采集，为后续数据治理的成本模型和治理方法积累经验。</li><li>当前工作重心为 AI Agent 工程化，推动知识库、Agent Skills 和自动化工作流在真实数据工程场景中的应用。</li></ul></div>
+        </div>
+        <div class="about"><p>10 年以上研发经验，长期从事企业级数据工程，具备内部运营系统、数据仓库、大规模离线计算、数据治理、性能与稳定性建设经验。现任腾讯企业微信数据工程师，定位为技术负责人兼个人贡献者，能够承担需求澄清、方案设计、核心实现、上线稳定性和方法论沉淀，并推动跨团队项目落地。</p><p>近年来重点投入 AI Agent 工程化，独立建设 AI-native 数据工程知识库及 Agent Skills 工具链，将可维护的项目知识与可靠执行能力结合，推动数据工程工作流从人工操作向 Agent 辅助演进。</p></div>
+      </div>
+    </section>
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">Expertise</p><h2 id="skills-title">技术纵深，工程视野。</h2></div></div>
+        <div class="skill-grid"><div class="skill"><h3><strong>大数据计算</strong></h3><p>PySpark、Spark、Hive / HiveSQL、Hadoop / YARN；具备大规模离线任务开发、性能调优、资源治理和故障排查经验。</p></div>
+<div class="skill"><h3><strong>数据仓库与业务建模</strong></h3><p>分层数据仓库、公共数据模型、复杂业务口径、指标体系、数据质量和长期演进兼容。</p></div>
+<div class="skill"><h3><strong>数据治理与稳定性</strong></h3><p>计算任务治理、存储生命周期、数据应用治理、告警、依赖分析、安全下线和异常恢复。</p></div>
+<div class="skill"><h3><strong>Python 工程</strong></h3><p>数据任务、自动化工具、API / CLI 工作流及 Agent Skills 开发。</p></div>
+<div class="skill"><h3><strong>AI Agent 工程化</strong></h3><p>LLM Wiki、Agent Skills、Tool Use、知识组织、增量更新、质量校验、评测集和多 Agent 工具兼容。</p></div>
+<div class="skill"><h3><strong>技术领导力</strong></h3><p>跨团队需求澄清与方案设计、核心代码实现、上线与稳定性、方法论及文档沉淀；无正式人员管理职责。</p></div>
+<div class="skill"><h3><strong>语言能力</strong></h3><p>可阅读英文技术资料。</p></div></div>
+      </div>
+    </section>
+    <section id="background" class="section" aria-labelledby="background-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">Background</p><h2 id="background-title">积累与认可。</h2></div></div>
+        <div class="background-grid">
+          <div class="background-block"><p class="eyebrow">Education / 教育背景</p><h3>华南理工大学</h3><ul class="points"><li><strong>硕士｜计算机科学与技术</strong>｜2012-09–2015-06</li><li><strong>本科｜软件工程</strong>｜2008-09–2012-06</li></ul></div>
+          <div class="background-block"><p class="eyebrow">Recognition / 代表荣誉</p><h3>个人贡献与团队协作</h3><ul class="points"><li><strong>2026 年上半年 OUTSTANDING CONTRIBUTOR</strong>｜个人荣誉</li><li><strong>2025 年企业微信项目团队“名品堂”</strong>｜本人参与项目的团队荣誉</li></ul>
+            <details class="archive"><summary><span>更多荣誉记录</span><span class="toggle-icon" aria-hidden="true"></span></summary><div class="detail-body"><ul class="points"><li>2023 年｜微信小团队管理实践项目团队｜年度管理突破奖</li><li>2022 年｜运营成本优化项目｜腾讯成本优化突破奖</li><li>2022 年｜企业微信、腾讯会议、腾讯文档联合办公活跃度提升项目团队｜腾讯业务突破奖</li><li>2022 年｜企业微信、腾讯会议、腾讯文档办公协同产品突破联合项目团队｜年度业务突破奖</li><li>2022 年｜政务微信数字化普惠联合项目团队｜腾讯可持续社会价值奖</li><li>2021 年｜企业微信生态发布会项目团队｜年度营销突破奖</li><li>2021 年｜企业微信项目团队｜年度业务突破奖</li><li>2021 年｜国务院第七次全国人口普查项目团队｜腾讯业务突破奖</li><li>2020 年｜腾讯战疫前线产品团队｜腾讯战疫特别贡献奖</li><li>2020 年｜企业微信 3000 万到 3 亿项目团队｜年度业务突破奖</li><li>2020 年｜腾讯抗击新冠疫情｜腾讯“同心战疫”特别贡献奖</li><li>2019 年｜企业微信项目团队｜公司级业务突破奖</li><li>2019 年上半年｜优秀员工｜个人荣誉</li><li>2017 年｜企业微信项目｜腾讯卓越研发奖</li></ul></div></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer"><div class="wrap"><span>蒋科 · 个人简历 / 公开展示版</span><a href="#top">回到顶部 ↑</a></div></footer>
+  <script>
+    // Progressive enhancement: every section and disclosure works without JavaScript.
+    const printButton = document.getElementById('print-resume');
+    printButton.hidden = false;
+    printButton.addEventListener('click', () => window.print());
+    let closedBeforePrint = null;
+    window.addEventListener('beforeprint', () => {
+      if (closedBeforePrint !== null) return;
+      closedBeforePrint = [...document.querySelectorAll('details:not([open])')];
+      closedBeforePrint.forEach(detail => { detail.open = true; });
+    });
+    window.addEventListener('afterprint', () => {
+      if (closedBeforePrint === null) return;
+      closedBeforePrint.forEach(detail => { detail.open = false; });
+      closedBeforePrint = null;
+    });
+  </script>
+</body>
+</html>
